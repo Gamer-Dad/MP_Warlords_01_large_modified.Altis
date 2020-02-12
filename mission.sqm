@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=32;
 	};
 	class Camera
 	{
-		pos[]={3858.5371,50.999336,10433.877};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={3871.3235,80.884666,10408.951};
+		dir[]={-0.54391611,-0.21569867,-0.810947};
+		up[]={-0.12015053,0.97645891,-0.17913756};
+		aside[]={-0.83049661,0,0.5570274};
 	};
 };
 binarizationWanted=0;
@@ -152,16 +152,18 @@ class Mission
 		overviewText="@STR_A3_WL_modRules";
 		resistanceWest=0;
 		timeOfChanges=28800;
+		startWeather=0.078593463;
+		startFog=0.030061299;
 		startWind=0;
+		forecastWeather=0.080595456;
 		forecastWind=0;
 		forecastWaves=0;
 		rainForced=1;
 		windForced=1;
-		year=2035;
-		month=6;
-		day=24;
-		hour=12;
-		minute=0;
+		year=2020;
+		month=2;
+		day=1;
+		minute=10;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -30268,6 +30270,7 @@ class Mission
 			{
 				position[]={3858.644,25.183704,10450.037};
 			};
+			name="parameters";
 			id=1058;
 			type="ModuleWLInit_F";
 			class CustomAttributes
