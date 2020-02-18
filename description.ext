@@ -1,4 +1,4 @@
-//#include "\A3\Missions_F_Warlords\defaultDescription.inc"
+#include "\A3\Missions_F_Warlords\defaultDescription.inc"
 //#include "\A3\Missions_F_Warlords\cfgMissionParams.inc"
 disabledAI = 1;
 
@@ -9,28 +9,9 @@ class Header
 		maxPlayers = 64;
 
 
-	// https://community.bistudio.com/wiki/Description.ext#corpseManagerMode
-	// keep minPlayerDistance at 0, otherwise if they make base near a town, the bodies will stay (potentially for the entire game)
-	minPlayerDistance     = 0;
-	corpseManagerMode     = 1;
-
-
-	corpseLimit           = 100;
-	corpseRemovalMinTime  = 60;
-	corpseRemovalMaxTime  = 120;
-
-
-	// https://community.bistudio.com/wiki/Description.ext#wreckManagerMode
-	wreckManagerMode    = 1;
-
-	// Hit the limit immediately so wreckRemovalMinTime works
-	wreckLimit          = 10;
-	wreckRemovalMinTime = 0;
-	wreckRemovalMaxTime = 200;
-
 
 	// Debug Enable
 	//enableDebugConsole = 1; // Not usable with obusqf packer
-	enableDebugConsole[] = {"76561198034106257", "76561198034106257"};
+	enableDebugConsole[] = {"76561198034106257"};
 
 	};

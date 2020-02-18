@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1059;
+		nextID=1060;
 	};
 	class LayerIndexProvider
 	{
-		nextID=32;
+		nextID=34;
 	};
 	class Camera
 	{
-		pos[]={3871.3235,80.884666,10408.951};
-		dir[]={-0.54391611,-0.21569867,-0.810947};
-		up[]={-0.12015053,0.97645891,-0.17913756};
-		aside[]={-0.83049661,0,0.5570274};
+		pos[]={3818.8071,90.620438,10361.813};
+		dir[]={-0.56968969,-0.81949198,0.062456645};
+		up[]={-0.81460959,0.57309133,0.089307286};
+		aside[]={0.10898017,-2.3521716e-007,0.99404967};
 	};
 };
 binarizationWanted=0;
@@ -39,13 +39,14 @@ addons[]=
 	"A3_Structures_F_Items_Vessels",
 	"A3_Structures_F_Civ_Camping",
 	"A3_Armor_F_Tank_LT_01",
-	"A3_Structures_F_Mil_Helipads"
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			className="A3_Air_F_EPB";
@@ -116,12 +117,58 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item10
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+class DynamicSimulation
+{
+	class EnableRadiuses
+	{
+		Vehicle=1000;
 	};
 };
 randomSeed=4804771;
 class ScenarioData
 {
-	author="Jezuro";
+	author="Jezuro - GamerDad Edits";
+	wreckManagerMode=1;
+	wreckRemovalMaxTime=300;
+	corpseManagerMode=1;
+	corpseLimit=100;
+	corpseRemovalMaxTime=300;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Intro
 {
@@ -148,7 +195,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="@STR_A3_WL_modName";
+		briefingName="Warlords Altis";
 		overviewText="@STR_A3_WL_modRules";
 		resistanceWest=0;
 		timeOfChanges=28800;
@@ -169,7 +216,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=528;
+		items=529;
 		class Item0
 		{
 			dataType="Trigger";
@@ -30827,6 +30874,96 @@ class Mission
 					};
 				};
 				nAttributes=29;
+			};
+		};
+		class Item528
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3753.2571,16.950155,10363.375};
+			};
+			id=1059;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminlogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 	};
