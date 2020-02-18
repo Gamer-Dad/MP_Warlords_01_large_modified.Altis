@@ -15,3 +15,11 @@ class Header
 	enableDebugConsole[] = {"76561198034106257"};
 
 	};
+
+
+#include "taw_vd\GUI.h"
+
+class CfgFunctions
+{
+    #include "taw_vd\CfgFunctions.hpp"
+};
