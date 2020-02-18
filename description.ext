@@ -1,6 +1,6 @@
 #include "\A3\Missions_F_Warlords\defaultDescription.inc"
 //#include "\A3\Missions_F_Warlords\cfgMissionParams.inc"
-disabledAI = 1;
+disabledAI = 0;
 
 class Header
 {
