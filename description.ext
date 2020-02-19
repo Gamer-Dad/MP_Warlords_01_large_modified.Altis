@@ -2,6 +2,16 @@
 //#include "\A3\Missions_F_Warlords\cfgMissionParams.inc"
 disabledAI = 0;
 
+
+
+
+
+OnLoadName		= "Warlords unOFFICIAL";
+author			= "BIS + GamerDad";
+OnLoadMission	= "Custom Warlords sticking with Vanilla content! Find us @ www.discord.io/warlords";
+loadScreen		= "images\loadScreen.paa";
+
+
 class Header
 {
 		gameType = Warlords;
@@ -23,3 +33,5 @@ class CfgFunctions
 {
     #include "taw_vd\CfgFunctions.hpp"
 };
+
+#include "R3F_LOG\desc_include.h"
