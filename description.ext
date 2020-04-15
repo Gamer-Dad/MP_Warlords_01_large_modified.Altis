@@ -1,15 +1,6 @@
-#include "\A3\Missions_F_Warlords\defaultDescription.inc"
-//#include "\A3\Missions_F_Warlords\cfgMissionParams.inc"
-disabledAI = 0;
-
-
-
-
-
-OnLoadName		= "Warlords unOFFICIAL";
-author			= "BIS + GamerDad";
-OnLoadMission	= "Custom Warlords sticking with Vanilla content! Find us @ www.discord.io/warlords";
-loadScreen		= "images\loadScreen.paa";
+#include "params\defaultDescription.inc"
+#include "params\cfgMissionParams.inc"
+disabledAI = 1;
 
 
 class Header
@@ -27,11 +18,14 @@ class Header
 	};
 
 
-#include "taw_vd\GUI.h"
+
+
+
+#include "taw_vd\GUI.h" //View Distance Editing
 
 class CfgFunctions
 {
     #include "taw_vd\CfgFunctions.hpp"
 };
 
-#include "R3F_LOG\desc_include.h"
+#include "R3F_LOG\desc_include.h" //Moveable crates

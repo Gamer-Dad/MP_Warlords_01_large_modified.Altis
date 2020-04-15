@@ -1,4 +1,4 @@
-[] execVM "\A3\Missions_F_Warlords\commonInitScript.sqf";
+[] execVM "params\commonInitScript.sqf";
 
 
 //TAW View Distance
