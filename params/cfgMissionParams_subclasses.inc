@@ -151,6 +151,6 @@ class BIS_WLJetsDLCAssetsEnabled //Jets DLC On/OFF
 	#define VIEW_DISTANCE_DEFAULT 4000
 #include "\a3\Functions_F_Heli\Params\paramViewDistance.inc"
 
-	#define REVIVEMODE 1
+
 #include "\a3\Functions_F\Params\paramRevive.hpp"
 
