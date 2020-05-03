@@ -8,11 +8,15 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1060;
+		nextID=1062;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class LayerIndexProvider
 	{
-		nextID=70;
+		nextID=86;
 	};
 	class Camera
 	{
@@ -40,13 +44,14 @@ addons[]=
 	"A3_Structures_F_Civ_Camping",
 	"A3_Armor_F_Tank_LT_01",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			className="A3_Air_F_EPB";
@@ -121,6 +126,13 @@ class AddonsMetaData
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -216,7 +228,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=529;
+		items=531;
 		class Item0
 		{
 			dataType="Trigger";
@@ -30965,6 +30977,28 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item529
+		{
+			dataType="Marker";
+			position[]={14801.2,0,14399.936};
+			name="marker_0";
+			text="Server: [ unOFFICIAL ] Warlords";
+			type="hd_dot";
+			alpha=0.81305939;
+			id=1060;
+			atlOffset=59.165047;
+		};
+		class Item530
+		{
+			dataType="Marker";
+			position[]={14799.226,-0.84100002,14301.313};
+			name="marker_1";
+			text="Talk to the dev team: www.discord.io/warlords";
+			type="hd_dot";
+			alpha=0.81305939;
+			id=1061;
+			atlOffset=56.406952;
 		};
 	};
 	class Connections

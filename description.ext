@@ -1,7 +1,7 @@
 #include "params\defaultDescription.inc"
 #include "params\cfgMissionParams.inc"
 disabledAI = 1;
-
+enableDebugConsole[] = {"76561198034106257"};
 
 class Header
 {
@@ -9,16 +9,14 @@ class Header
 		minPlayers = 1;
 		maxPlayers = 64;
 
+};
 
+#include "defines.hpp"
 
-	// Debug Enable
-	//enableDebugConsole = 1; // Not usable with obusqf packer
-	enableDebugConsole[] = {"76561198034106257"};
-
-	};
-
-
-
+class RscTitles 
+{
+    #include "titles.hpp"
+};
 
 
 #include "taw_vd\GUI.h" //View Distance Editing
