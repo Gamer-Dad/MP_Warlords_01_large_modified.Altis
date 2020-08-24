@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=86;
+		nextID=96;
 	};
 	class Camera
 	{
@@ -30482,7 +30482,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="['A3DefaultAll']";
+							value="[""MyWLAssetList""]";
 						};
 					};
 				};
