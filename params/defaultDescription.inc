@@ -50,12 +50,17 @@ class CfgWLRequisitionPresets
 						cost = 2500;
 						requirements[] = {"H"};
 					};
-					class O_Heli_Attack_02_dynamicLoadout_F
+					class O_Heli_Attack_02_dynamicLoadout_F 
 					{
 						cost = 6000;
 						requirements[] = {"H"};
-					};								
-					class O_T_VTOL_02_infantry_dynamicLoadout_F
+					};
+					class O_UAV_02_dynamicLoadout_F //K40 Ababil-3 w/6 ATGMS
+					{
+						cost = 5000;
+						requirements[] = {"H"};
+					};									
+					class O_T_VTOL_02_infantry_dynamicLoadout_F 
 					{
 						cost = 7000;
 						requirements[] = {"H"};
@@ -67,15 +72,21 @@ class CfgWLRequisitionPresets
 					};	
 					class O_Plane_Fighter_02_F
 					{
-						cost = 13500;
+						cost = 15000;
 						requirements[] = {"A"};
 					};
 				};
 				class Defences
 				{
-					class O_GMG_01_A_F
+					
+					class O_HMG_01_F
 					{
-						cost = 500;
+						cost = 250;
+						requirements[] = {};
+					};
+					class O_HMG_01_high_F
+					{
+						cost = 250;
 						requirements[] = {};
 					};
 					class O_GMG_01_F
@@ -90,17 +101,22 @@ class CfgWLRequisitionPresets
 					};
 					class O_HMG_01_A_F
 					{
+						cost = 600;
+						requirements[] = {};
+					};
+					class O_GMG_01_A_F
+					{
+						cost = 700;
+						requirements[] = {};
+					};
+					class O_static_AA_F
+					{
 						cost = 500;
 						requirements[] = {};
 					};
-					class O_HMG_01_F
+					class O_static_AT_F
 					{
-						cost = 250;
-						requirements[] = {};
-					};
-					class O_HMG_01_high_F
-					{
-						cost = 250;
+						cost = 500;
 						requirements[] = {};
 					};
 					class O_Radar_System_02_F
@@ -115,35 +131,16 @@ class CfgWLRequisitionPresets
 						offset[] = {0, 5.3, 0};
 						requirements[] = {};
 					};
-					class O_static_AA_F
-					{
-						cost = 500;
-						requirements[] = {};
-					};
-					class O_static_AT_F
-					{
-						cost = 500;
-						requirements[] = {};
-					};
+					
 				};
 				class Gear
 				{
-					class Box_East_Ammo_F
+					class Box_East_Grenades_F
 					{
 						cost = 200;
 						requirements[] = {};
 					};
-					class Box_East_AmmoOrd_F
-					{
-						cost = 250;
-						requirements[] = {};
-					};
-					class Box_East_AmmoVeh_F
-					{
-						cost = 500;
-						requirements[] = {};
-					};
-					class Box_East_Grenades_F
+					class Box_East_Ammo_F
 					{
 						cost = 200;
 						requirements[] = {};
@@ -153,11 +150,16 @@ class CfgWLRequisitionPresets
 						cost = 250;
 						requirements[] = {};
 					};
+					class Box_East_AmmoOrd_F
+					{
+						cost = 250;
+						requirements[] = {};
+					};
 					class Box_East_WpsLaunch_F
 					{
 						cost = 300;
 						requirements[] = {};
-					};
+					};								
 					class Box_East_WpsSpecial_F
 					{
 						cost = 500;
@@ -168,6 +170,11 @@ class CfgWLRequisitionPresets
 						cost = 500;
 						requirements[] = {};
 					};
+					class Box_East_AmmoVeh_F
+					{
+						cost = 750;
+						requirements[] = {};
+					};	
 				};
 				class Infantry
 				{
@@ -176,54 +183,14 @@ class CfgWLRequisitionPresets
 						cost = 100;
 						requirements[] = {};
 					};
-					class O_HeavyGunner_F
-					{
-						cost = 200;
-						requirements[] = {};
-					};
 					class O_Helipilot_F
 					{
 						cost = 100;
 						requirements[] = {};
 					};
-					class O_medic_F
-					{
-						cost = 125;
-						requirements[] = {};
-					};
 					class O_Pilot_F
 					{
 						cost = 100;
-						requirements[] = {};
-					};
-					class O_Sharpshooter_F
-					{
-						cost = 300;
-						requirements[] = {};
-					};
-					class O_sniper_F
-					{
-						cost = 300;
-						requirements[] = {};
-					};
-					class O_Soldier_A_F
-					{
-						cost = 150;
-						requirements[] = {};
-					};
-					class O_Soldier_AA_F
-					{
-						cost = 300;
-						requirements[] = {};
-					};
-					class O_soldier_AR_F
-					{
-						cost = 150;
-						requirements[] = {};
-					};
-					class O_soldier_AT_F
-					{
-						cost = 300;
 						requirements[] = {};
 					};
 					class O_Soldier_F
@@ -236,14 +203,19 @@ class CfgWLRequisitionPresets
 						cost = 125;
 						requirements[] = {};
 					};
-					class O_soldier_HAT_F
+					class O_medic_F
 					{
-						cost = 350;
+						cost = 125;
 						requirements[] = {};
 					};
-					class O_soldier_LAT_F
+					class O_Soldier_A_F
 					{
-						cost = 250;
+						cost = 150;
+						requirements[] = {};
+					};
+					class O_soldier_AR_F
+					{
+						cost = 150;
 						requirements[] = {};
 					};
 					class O_soldier_M_F
@@ -256,17 +228,54 @@ class CfgWLRequisitionPresets
 						cost = 200;
 						requirements[] = {};
 					};
+					class O_HeavyGunner_F
+					{
+						cost = 200;
+						requirements[] = {};
+					};					
+					class O_Sharpshooter_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};
+					class O_sniper_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};				
+					class O_Soldier_AA_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};
+					class O_soldier_LAT_F
+					{
+						cost = 250;
+						requirements[] = {};
+					};					
+					class O_soldier_AT_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};				
+					class O_soldier_HAT_F
+					{
+						cost = 400;
+						requirements[] = {};
+					};
+					
+					
 				};
 				class Naval
 				{
-					class O_Boat_Armed_01_hmg_F
-					{
-						cost = 750;
-						requirements[] = {"W"};
-					};
 					class O_Boat_Transport_01_F
 					{
 						cost = 100;
+						requirements[] = {"W"};
+					};
+					class O_Boat_Armed_01_hmg_F
+					{
+						cost = 750;
 						requirements[] = {"W"};
 					};
 					class O_SDV_01_F
@@ -277,17 +286,53 @@ class CfgWLRequisitionPresets
 				};
 				class Vehicles
 				{
-					class O_APC_Tracked_02_AA_F
+					
+					class O_UGV_01_F
 					{
-						cost = 4000;
+						cost = 500;
 						requirements[] = {};
 					};
-					class O_APC_Tracked_02_cannon_F
+					class O_UGV_01_rcws_F
 					{
-						cost = 3500;
+						cost = 2000;
 						requirements[] = {};
 					};
-					class O_APC_Wheeled_02_rcws_v2_F
+					class O_Quadbike_01_F
+					{
+						cost = 100;
+						requirements[] = {};
+					};
+					class O_LSV_02_unarmed_F
+					{
+						cost = 350;
+						requirements[] = {};
+					};
+					class O_MRAP_02_F
+					{
+						cost = 500;
+						requirements[] = {};
+					};
+					class O_Truck_03_transport_F
+					{
+						cost = 650;
+						requirements[] = {};
+					};
+					class O_Truck_03_medical_F
+					{
+						cost = 750;
+						requirements[] = {};
+					};
+					class O_Truck_03_Fuel_F
+					{
+						cost = 750;
+						requirements[] = {};
+					};
+					class O_Truck_03_Repair_F
+					{
+						cost = 1500;
+						requirements[] = {};
+					};	
+					class O_Truck_03_ammo_F
 					{
 						cost = 3000;
 						requirements[] = {};
@@ -301,12 +346,32 @@ class CfgWLRequisitionPresets
 					{
 						cost = 1250;
 						requirements[] = {};
-					};
-					class O_LSV_02_unarmed_F
+					};					
+					class O_MRAP_02_gmg_F
 					{
-						cost = 350;
+						cost = 1600;
 						requirements[] = {};
 					};
+					class O_MRAP_02_hmg_F
+					{
+						cost = 1400;
+						requirements[] = {};
+					};
+					class O_APC_Wheeled_02_rcws_v2_F
+					{
+						cost = 3000;
+						requirements[] = {};
+					};
+					class O_APC_Tracked_02_cannon_F
+					{
+						cost = 3500;
+						requirements[] = {};
+					};
+					class O_APC_Tracked_02_AA_F
+					{
+						cost = 4000;
+						requirements[] = {};
+					};				
 					class O_MBT_02_cannon_F
 					{
 						cost = 5500;
@@ -322,67 +387,20 @@ class CfgWLRequisitionPresets
 						cost = 7500;
 						requirements[] = {};
 					};
-					class O_MRAP_02_F
-					{
-						cost = 500;
-						requirements[] = {};
-					};
-					class O_MRAP_02_gmg_F
-					{
-						cost = 1600;
-						requirements[] = {};
-					};
-					class O_MRAP_02_hmg_F
-					{
-						cost = 1400;
-						requirements[] = {};
-					};
-					class O_Quadbike_01_F
-					{
-						cost = 100;
-						requirements[] = {};
-					};
-					class O_Truck_03_ammo_F
-					{
-						cost = 3000;
-						requirements[] = {};
-					};
-					class O_Truck_03_Fuel_F
-					{
-						cost = 750;
-						requirements[] = {};
-					};
-					class O_Truck_03_medical_F
-					{
-						cost = 750;
-						requirements[] = {};
-					};
-					class O_Truck_03_Repair_F
-					{
-						cost = 1500;
-						requirements[] = {};
-					};
-					class O_Truck_03_transport_F
-					{
-						cost = 650;
-						requirements[] = {};
-					};
+
+					
+					
+					
+				
+				
+					
 				};
 			};
 			class WEST
 			{
 				class Aircraft
 				{
-					class B_Heli_Attack_01_dynamicLoadout_F
-					{
-						cost = 6000;
-						requirements[] = {"H"};
-					};
-					class B_Heli_Light_01_dynamicLoadout_F
-					{
-						cost = 2500;
-						requirements[] = {"H"};
-					};
+				
 					class B_Heli_Light_01_F
 					{
 						cost = 1000;
@@ -390,35 +408,66 @@ class CfgWLRequisitionPresets
 					};
 					class B_Heli_Transport_01_F
 					{
-						cost = 3000;
+						cost = 2000;
 						requirements[] = {"H"};
 					};
+					class B_Heli_Light_01_dynamicLoadout_F
+					{
+						cost = 3000;
+						requirements[] = {"H"};
+					};					
 					class B_Heli_Transport_03_F
 					{
-						cost = 4500;
+						cost = 3500;
 						requirements[] = {"H"};
+					};
+					class B_Heli_Attack_01_dynamicLoadout_F
+					{
+						cost = 5000;
+						requirements[] = {"H"};
+					};
+					class B_T_VTOL_01_armed_F
+					{
+						cost = 6000;
+						requirements[] = {"H"};
+					};
+					class B_UAV_05_F	//UCAV Sentinel x2 GBUs
+					{
+						cost = 3500;
+						requirements[] = {"A"};
+					};
+					class B_UAV_02_dynamicLoadout_F //MQ-4A Greyhawk x6 ATGMs
+					{
+						cost = 5000;
+						requirements[] = {"A"};
+					};				
+					class B_T_UAV_03_dynamicLoadout_F //MQ-12 Falcon Heli x6 ATGMS x2 Rocket Pods
+					{
+						cost = 5000;
+						requirements[] = {"A"};
 					};
 					class B_Plane_CAS_01_dynamicLoadout_F
 					{
-						cost = 10500;
+						cost = 8500;
 						requirements[] = {"A"};
 					};
 					class B_Plane_Fighter_01_F
 					{
-						cost = 13500;
+						cost = 15000;
 						requirements[] = {"A"};
 					};
-					class B_T_VTOL_01_armed_F
-					{
-						cost = 9000;
-						requirements[] = {"H"};
-					};
+					
 				};
 				class Defences
 				{
-					class B_GMG_01_A_F
+					class B_HMG_01_F
 					{
-						cost = 500;
+						cost = 250;
+						requirements[] = {};
+					};
+					class B_HMG_01_high_F
+					{
+						cost = 250;
 						requirements[] = {};
 					};
 					class B_GMG_01_F
@@ -433,29 +482,12 @@ class CfgWLRequisitionPresets
 					};
 					class B_HMG_01_A_F
 					{
-						cost = 500;
+						cost = 600;
 						requirements[] = {};
 					};
-					class B_HMG_01_F
+					class B_GMG_01_A_F
 					{
-						cost = 250;
-						requirements[] = {};
-					};
-					class B_HMG_01_high_F
-					{
-						cost = 250;
-						requirements[] = {};
-					};
-					class B_Radar_System_01_F
-					{
-						cost = 8500;
-						offset[] = {0, 5.3, 0};
-						requirements[] = {};
-					};
-					class B_SAM_System_03_F
-					{
-						cost = 27500;
-						offset[] = {0, 5.3, 0};
+						cost = 700;
 						requirements[] = {};
 					};
 					class B_static_AA_F
@@ -467,13 +499,45 @@ class CfgWLRequisitionPresets
 					{
 						cost = 500;
 						requirements[] = {};
+					};					
+					class B_AAA_System_01_F
+					{
+						cost = 5000;
+						offset[] = {0, 5.3, 0};
+						requirements[] = {};
 					};
+					class B_SAM_System_01_F
+					{
+						cost = 10000;
+						offset[] = {0, 5.3, 0};
+						requirements[] = {};
+					};
+					//class B_Ship_Gun_01_F
+					//{
+					//	cost = 15000;
+					//	offset[] = {0, 5.3, 0};
+					//	requirements[] = {};
+					//};
+					class B_SAM_System_02_F
+					{
+						cost = 25000;
+						offset[] = {0, 5.3, 0};
+						requirements[] = {};
+					};
+					//class B_SAM_System_03_F
+					//{
+					//	cost = 27500;
+					//	offset[] = {0, 5.3, 0};
+					//	requirements[] = {};
+					//};
+					
 				};
 				class Gear
 				{
-					class B_supplyCrate_F
+					
+					class Box_NATO_Grenades_F
 					{
-						cost = 500;
+						cost = 200;
 						requirements[] = {};
 					};
 					class Box_NATO_Ammo_F
@@ -484,16 +548,6 @@ class CfgWLRequisitionPresets
 					class Box_NATO_AmmoOrd_F
 					{
 						cost = 250;
-						requirements[] = {};
-					};
-					class Box_NATO_AmmoVeh_F
-					{
-						cost = 500;
-						requirements[] = {};
-					};
-					class Box_NATO_Grenades_F
-					{
-						cost = 200;
 						requirements[] = {};
 					};
 					class Box_NATO_Wps_F
@@ -511,6 +565,19 @@ class CfgWLRequisitionPresets
 						cost = 500;
 						requirements[] = {};
 					};
+					class B_supplyCrate_F
+					{
+						cost = 500;
+						requirements[] = {};
+					};					
+					class Box_NATO_AmmoVeh_F
+					{
+						cost = 750;
+						requirements[] = {};
+					};
+				
+					
+					
 				};
 				class Infantry
 				{
@@ -519,12 +586,17 @@ class CfgWLRequisitionPresets
 						cost = 100;
 						requirements[] = {};
 					};
-					class B_HeavyGunner_F
+					class B_Helipilot_F
 					{
-						cost = 200;
+						cost = 100;
 						requirements[] = {};
 					};
-					class B_Helipilot_F
+					class B_Pilot_F
+					{
+						cost = 100;
+						requirements[] = {};
+					};
+					class B_Soldier_F
 					{
 						cost = 100;
 						requirements[] = {};
@@ -534,19 +606,9 @@ class CfgWLRequisitionPresets
 						cost = 125;
 						requirements[] = {};
 					};
-					class B_Pilot_F
+					class B_Soldier_GL_F
 					{
-						cost = 100;
-						requirements[] = {};
-					};
-					class B_Sharpshooter_F
-					{
-						cost = 300;
-						requirements[] = {};
-					};
-					class B_sniper_F
-					{
-						cost = 300;
+						cost = 125;
 						requirements[] = {};
 					};
 					class B_Soldier_A_F
@@ -554,39 +616,9 @@ class CfgWLRequisitionPresets
 						cost = 150;
 						requirements[] = {};
 					};
-					class B_soldier_AA_F
-					{
-						cost = 300;
-						requirements[] = {};
-					};
 					class B_soldier_AR_F
 					{
 						cost = 150;
-						requirements[] = {};
-					};
-					class B_soldier_AT_F
-					{
-						cost = 300;
-						requirements[] = {};
-					};
-					class B_Soldier_F
-					{
-						cost = 100;
-						requirements[] = {};
-					};
-					class B_Soldier_GL_F
-					{
-						cost = 125;
-						requirements[] = {};
-					};
-					class B_soldier_LAT2_F
-					{
-						cost = 300;
-						requirements[] = {};
-					};
-					class B_soldier_LAT_F
-					{
-						cost = 250;
 						requirements[] = {};
 					};
 					class B_soldier_M_F
@@ -599,19 +631,59 @@ class CfgWLRequisitionPresets
 						cost = 200;
 						requirements[] = {};
 					};
+					class B_HeavyGunner_F
+					{
+						cost = 200;
+						requirements[] = {};
+					};					
+					class B_Sharpshooter_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};
+					class B_sniper_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};
+				
+					class B_soldier_AA_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};	
+					class B_soldier_LAT_F
+					{
+						cost = 200;
+						requirements[] = {};
+					};	
+					class B_soldier_LAT2_F
+					{
+						cost = 250;
+						requirements[] = {};
+					};		
+					class B_soldier_AT_F
+					{
+						cost = 300;
+						requirements[] = {};
+					};				
+					
+					
+					
 				};
 				class Naval
 				{
-					class B_Boat_Armed_01_minigun_F
-					{
-						cost = 750;
-						requirements[] = {"W"};
-					};
 					class B_Boat_Transport_01_F
 					{
 						cost = 100;
 						requirements[] = {"W"};
 					};
+					class B_Boat_Armed_01_minigun_F
+					{
+						cost = 750;
+						requirements[] = {"W"};
+					};
+				
 					class B_SDV_01_F
 					{
 						cost = 900;
@@ -620,69 +692,14 @@ class CfgWLRequisitionPresets
 				};
 				class Vehicles
 				{
-					class B_AFV_Wheeled_01_cannon_F
-					{
-						cost = 7000;
-						requirements[] = {};
-					};
-					class B_AFV_Wheeled_01_up_cannon_F
-					{
-						cost = 7500;
-						requirements[] = {};
-					};
-					class B_APC_Tracked_01_AA_F
-					{
-						cost = 4000;
-						requirements[] = {};
-					};
-					class B_APC_Tracked_01_rcws_F
-					{
-						cost = 3500;
-						requirements[] = {};
-					};
-					class B_APC_Wheeled_01_cannon_F
-					{
-						cost = 3000;
-						requirements[] = {};
-					};
-					class B_LSV_01_armed_F
-					{
-						cost = 1000;
-						requirements[] = {};
-					};
-					class B_LSV_01_AT_F
-					{
-						cost = 1250;
-						requirements[] = {};
-					};
-					class B_LSV_01_unarmed_F
-					{
-						cost = 350;
-						requirements[] = {};
-					};
-					class B_MBT_01_cannon_F
-					{
-						cost = 5000;
-						requirements[] = {};
-					};
-					class B_MBT_01_TUSK_F
-					{
-						cost = 5500;
-						requirements[] = {};
-					};
-					class B_MRAP_01_F
+					class B_UGV_01_F
 					{
 						cost = 500;
 						requirements[] = {};
 					};
-					class B_MRAP_01_gmg_F
+					class B_UGV_01_rcws_F
 					{
-						cost = 1600;
-						requirements[] = {};
-					};
-					class B_MRAP_01_hmg_F
-					{
-						cost = 1400;
+						cost = 2000;
 						requirements[] = {};
 					};
 					class B_Quadbike_01_F
@@ -690,9 +707,19 @@ class CfgWLRequisitionPresets
 						cost = 100;
 						requirements[] = {};
 					};
-					class B_Truck_01_ammo_F
+					class B_LSV_01_unarmed_F
 					{
-						cost = 3000;
+						cost = 350;
+						requirements[] = {};
+					};
+					class B_MRAP_01_F
+					{
+						cost = 500;
+						requirements[] = {};
+					};
+					class B_Truck_01_transport_F
+					{
+						cost = 650;
 						requirements[] = {};
 					};
 					class B_Truck_01_fuel_F
@@ -710,11 +737,83 @@ class CfgWLRequisitionPresets
 						cost = 1500;
 						requirements[] = {};
 					};
-					class B_Truck_01_transport_F
+					class B_Truck_01_ammo_F
 					{
-						cost = 650;
+						cost = 3000;
 						requirements[] = {};
 					};
+					class B_LSV_01_armed_F
+					{
+						cost = 1000;
+						requirements[] = {};
+					};
+					class B_LSV_01_AT_F
+					{
+						cost = 1250;
+						requirements[] = {};
+					};
+					class B_MRAP_01_hmg_F
+					{
+						cost = 1400;
+						requirements[] = {};
+					};				
+					class B_MRAP_01_gmg_F
+					{
+						cost = 1600;
+						requirements[] = {};
+					};					
+					class B_APC_Tracked_01_rcws_F
+					{
+						cost = 2500;
+						requirements[] = {};
+					};
+					class B_APC_Wheeled_01_cannon_F
+					{
+						cost = 3000;
+						requirements[] = {};
+					};
+					class B_APC_Tracked_01_AA_F
+					{
+						cost = 4000;
+						requirements[] = {};
+					};
+					class B_MBT_01_cannon_F
+					{
+						cost = 4500;
+						requirements[] = {};
+					};
+					class B_MBT_01_TUSK_F
+					{
+						cost = 5000;
+						requirements[] = {};
+					};
+					/*class B_AFV_Wheeled_01_cannon_F  //Rhino
+					{
+						cost = 7000;
+						requirements[] = {};
+					};
+					class B_AFV_Wheeled_01_up_cannon_F //Rhino UP
+					{
+						cost = 7500;
+						requirements[] = {};
+					};*/
+					
+				
+					
+
+					
+				
+					
+					
+					
+					
+					
+					
+					
+					
+				
+					
+					
 				};
 			};
 	};
