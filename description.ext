@@ -1,13 +1,13 @@
 #include "params\defaultDescription.inc"
 #include "params\cfgMissionParams.inc"
-disabledAI = 1;
+disabledAI = 0;
 enableDebugConsole[] = {"76561198034106257"};
 
 class Header
 {
 		gameType = Warlords;
 		minPlayers = 1;
-		maxPlayers = 64;
+		maxPlayers = 44;
 
 };
 

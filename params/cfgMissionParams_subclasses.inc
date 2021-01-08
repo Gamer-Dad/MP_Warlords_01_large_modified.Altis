@@ -10,7 +10,7 @@ class BIS_WLTimeAcceleration //Fast time
 	title = $STR_A3_WL_param2_title;
 	values[] = {1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24};
 	texts[] = {$STR_DISP_OPT_DISABLED, "x2", "x4", "x6", "x8", "x10", "x12", "x14", "x16", "x18", "x20", "x22", "x24"};
-	default = 12;
+	default = 1;
 };
 class BIS_WLProgress //Forced Progress: Accelerated flag cap startup, 2 = BLUFOR 25% & OPFOR 25%
 {
@@ -38,7 +38,7 @@ class BIS_WLVotingResetEnabled //Reset Sector Voting
 	title = $STR_A3_WL_menu_resetvoting;
 	values[] = {1, 0};
 	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
-	default = 0;
+	default = 1;
 };
 class BIS_WLTeamBalanceEnabled //Team Balancing
 {
@@ -52,7 +52,7 @@ class BIS_WLAIVoting //AI Sector Voting
 	title = $STR_A3_WL_param5_title;
 	values[] = {1, 0};
 	texts[] = {$STR_DISP_OPT_ENABLED, $STR_DISP_OPT_DISABLED};
-	default = 0;
+	default = 1;
 };
 class BIS_WLArsenalEnabled //Arsenal Access on/off
 {
