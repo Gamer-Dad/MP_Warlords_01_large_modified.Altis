@@ -1,6 +1,6 @@
 #include "params\defaultDescription.inc"
 #include "params\cfgMissionParams.inc"
-disabledAI = 0;
+disabledAI = 1;
 enableDebugConsole[] = {"76561198034106257"};
 
 class Header
